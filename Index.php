@@ -32,10 +32,11 @@
 				text-align: center;
 			} 
 				
-			p{
+			a{
 				font-family: 'Bangers', cursive;
 				color: #ff8400;
 				font-size: 30px;
+				text-decoration: none;
 			}
 		</style>
 	</head>
@@ -45,10 +46,10 @@
 		
 		<h1>select your monkey!</h1>
 		
-		<img src="images/monkey_swings.png" alt="monkey swings">
+		<img src="images/monkey_swings.png" alt="monkey swings"><br>
 		
 		<?php foreach($apen as $aap) { ?>
-			<p><?= $aap; ?></p>
+			<a href="https://www.google.nl/search?q=<?= $aap; ?>&tbm=isch"><?= $aap; ?></a><br>
 		<?php } ?>
 
 	</body>
